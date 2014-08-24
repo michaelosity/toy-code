@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>72E39B68-43FC-440D-94BF-DC59A105B4A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>reader1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5BA0DD7B-998C-4C6B-818D-3016CDE984E9</key>
+		<string>ssh://bitbucket.org/michaelosity/reader1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>reader1.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5BA0DD7B-998C-4C6B-818D-3016CDE984E9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/michaelosity/reader1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5BA0DD7B-998C-4C6B-818D-3016CDE984E9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5BA0DD7B-998C-4C6B-818D-3016CDE984E9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>reader1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
