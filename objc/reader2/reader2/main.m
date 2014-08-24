@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Michaelosity
 //  Michael Wells
 //  michael@michaelosity.com
 //
