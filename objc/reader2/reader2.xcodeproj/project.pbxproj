@@ -24,8 +24,6 @@
 		4C82F4E919A28C27008F7555 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82F4E819A28C27008F7555 /* XCTest.framework */; };
 		4C82F4EA19A28C27008F7555 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82F4C919A28C27008F7555 /* Foundation.framework */; };
 		4C82F4EB19A28C27008F7555 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82F4CD19A28C27008F7555 /* UIKit.framework */; };
-		4C82F4F319A28C27008F7555 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C82F4F119A28C27008F7555 /* InfoPlist.strings */; };
-		4C82F4F519A28C27008F7555 /* reader2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82F4F419A28C27008F7555 /* reader2Tests.m */; };
 		4C82F4FF19A2BE5B008F7555 /* michaelosity-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C82F4FE19A2BE5B008F7555 /* michaelosity-icon.png */; };
 /* End PBXBuildFile section */
 
@@ -66,9 +64,6 @@
 		4C82F4E119A28C27008F7555 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C82F4E719A28C27008F7555 /* reader2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reader2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C82F4E819A28C27008F7555 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4C82F4F019A28C27008F7555 /* reader2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "reader2Tests-Info.plist"; sourceTree = "<group>"; };
-		4C82F4F219A28C27008F7555 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C82F4F419A28C27008F7555 /* reader2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reader2Tests.m; sourceTree = "<group>"; };
 		4C82F4FE19A2BE5B008F7555 /* michaelosity-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "michaelosity-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				4C82F4CF19A28C27008F7555 /* reader2 */,
-				4C82F4EE19A28C27008F7555 /* reader2Tests */,
 				4C82F4C819A28C27008F7555 /* Frameworks */,
 				4C82F4C719A28C27008F7555 /* Products */,
 			);
@@ -158,24 +152,6 @@
 				4C82F4D219A28C27008F7555 /* InfoPlist.strings */,
 				4C82F4D519A28C27008F7555 /* main.m */,
 				4C82F4D719A28C27008F7555 /* reader2-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4C82F4EE19A28C27008F7555 /* reader2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				4C82F4F419A28C27008F7555 /* reader2Tests.m */,
-				4C82F4EF19A28C27008F7555 /* Supporting Files */,
-			);
-			path = reader2Tests;
-			sourceTree = "<group>";
-		};
-		4C82F4EF19A28C27008F7555 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C82F4F019A28C27008F7555 /* reader2Tests-Info.plist */,
-				4C82F4F119A28C27008F7555 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,7 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C82F4F319A28C27008F7555 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C82F4F519A28C27008F7555 /* reader2Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,14 +297,6 @@
 				4C82F4DC19A28C27008F7555 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C82F4F119A28C27008F7555 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C82F4F219A28C27008F7555 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
