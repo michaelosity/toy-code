@@ -159,18 +159,26 @@
     [self.photoImageView setImage:nil];
     [self.userImageView setImage:nil];
 
-    [photo loadPhotoImage:^(UIImage *image)
+    [photo downloadImageFromURL:photo.imageURL forKey:photo.imageCacheKey callback:^(NSString *key, UIImage *image)
     {
-        dispatch_async(dispatch_get_main_queue(), ^
+        if ([key isEqualToString:photo.imageCacheKey])
         {
-            [self.photoImageView setImage:image];
-        });
+            dispatch_async(dispatch_get_main_queue(), ^
+            {
+                [self.photoImageView setImage:image];
+            });
+        }
     }];
 
-    [photo loadProfileImage:^(UIImage *image) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.userImageView setImage:image];
-        });
+    [photo downloadImageFromURL:photo.profileImageURL forKey:photo.profileImageCacheKey callback:^(NSString *key, UIImage *image)
+    {
+        if ([key isEqualToString:photo.profileImageCacheKey])
+        {
+            dispatch_async(dispatch_get_main_queue(), ^
+            {
+                [self.userImageView setImage:image];
+            });
+        }
     }];
 }
 

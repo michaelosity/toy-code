@@ -9,9 +9,6 @@
 
 @interface MLYPhoto ()
 
-@property (nonatomic, readonly) NSString *photoCacheKey;
-@property (nonatomic, readonly) NSString *profileImageCacheKey;
-
 @end
 
 @implementation MLYPhoto
@@ -30,7 +27,7 @@ static NSString *cachesFolder;
         {
             _imageURL = [NSURL URLWithString:imageURLString];
         }
-        _photoCacheKey = [values[@"id"] copy];
+        _imageCacheKey = [values[@"id"] copy];
 
         NSDictionary *user = values[@"user"];
         _userName = [NSString stringWithFormat:@"%@ (%@)", user[@"full_name"], user[@"username"]];
@@ -49,17 +46,7 @@ static NSString *cachesFolder;
     return self;
 }
 
-- (void)loadPhotoImage:(void(^)(UIImage* image))callback
-{
-    [self p_downloadImage:self.imageURL forKey:self.photoCacheKey callback:callback];
-}
-
-- (void)loadProfileImage:(void(^)(UIImage* image))callback
-{
-    [self p_downloadImage:self.profileImageURL forKey:self.profileImageCacheKey callback:callback];
-}
-
-- (void)p_downloadImage:(NSURL *)url forKey:(NSString *)key callback:(void(^)(UIImage* image))callback
+- (void)downloadImageFromURL:(NSURL *)url forKey:(NSString *)key callback:(void(^)(NSString* key, UIImage* image))callback
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul), ^
     {
@@ -85,7 +72,7 @@ static NSString *cachesFolder;
 
         if (callback)
         {
-            callback(image);
+            callback(key, image);
         }
     });
 }
