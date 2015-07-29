@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F36A3B0-AB59-4B74-BE91-45860E04F12A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Duper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>79AAB17529E871E5A2F2D5A00C057C1AC87C717F</key>
+		<string>bitbucket.org:michaelosity/toys.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>objc/duper/Duper.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>79AAB17529E871E5A2F2D5A00C057C1AC87C717F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:michaelosity/toys.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>79AAB17529E871E5A2F2D5A00C057C1AC87C717F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>79AAB17529E871E5A2F2D5A00C057C1AC87C717F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>toys</string>
+		</dict>
+	</array>
+</dict>
+</plist>
