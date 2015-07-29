@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xaR-0c-iXQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XLn-Pr-FoD">
+            <objects>
+                <navigationController id="xaR-0c-iXQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gdc-l3-bKc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="laV-mJ-W4h" kind="relationship" relationship="rootViewController" id="mZc-zh-BiV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5z-AV-D56" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="439"/>
+        </scene>
+        <!--ISS Location View Controller-->
+        <scene sceneID="oJU-2x-odA">
+            <objects>
+                <viewController id="laV-mJ-W4h" userLabel="ISS Location View Controller" customClass="ISSLocationViewController" customModule="JawboneISS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Rz-Ij-Fvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="a9G-ou-iHH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8AM-ga-ueP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUc-NJ-jZY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="laV-mJ-W4h" id="uCc-4L-hkH"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DUc-NJ-jZY" secondAttribute="trailing" constant="-16" id="ASq-Ve-97t"/>
+                            <constraint firstItem="DUc-NJ-jZY" firstAttribute="leading" secondItem="8AM-ga-ueP" secondAttribute="leadingMargin" constant="-16" id="JNp-Nf-t4w"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DUc-NJ-jZY" secondAttribute="bottom" id="fms-wG-VcQ"/>
+                            <constraint firstItem="DUc-NJ-jZY" firstAttribute="top" secondItem="8AM-ga-ueP" secondAttribute="topMargin" id="rgE-lD-TlI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ISS Location" id="8Es-ZT-ef4"/>
+                    <connections>
+                        <outlet property="mapView" destination="DUc-NJ-jZY" id="Qgs-c6-VqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ec-7a-NaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="439"/>
+        </scene>
+    </scenes>
+</document>
