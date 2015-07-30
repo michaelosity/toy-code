@@ -2,6 +2,13 @@
 
 Write an iOS app that displays the international space station location on a map using the [REST API](http://open-notify.org/Open-Notify-API/ISS-Location-Now/).
 
+## Implementation Notes
+
+When rushing through the implementation I noticed a few things I would probably do differently.
+
+1. I'd use a serial queue instead of a concurrent dispatch queue. Instead of using dispatch_get_global_queue() I'd create a serial queue so that each request is dispatched in order.
+2. I might also keep track of the timestamp from the retrieved location and ensure that we never update the UI with an earlier time (which could happen as written).
+
 # MIT LICENSE
 
 The MIT License (MIT)
