@@ -1,6 +1,6 @@
-# TOYS
+# TOY CODE
 
-Just some code I've written for various side projects. There is nothing
+Just some toy code I've written for various side projects. There is nothing
 terribly original in any of the code and typical warnings apply.
 
 # MIT LICENSE
